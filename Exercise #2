@@ -1,0 +1,24 @@
+import tkinter as tk
+
+class MyGUI:
+    def __init__(self):
+        # Create the main window widget.
+        self.main_window = tk.Tk()
+
+        # Create a Label widget containing the last name.
+        self.last_name_label = tk.Label(self.main_window, text="Last Name: Smith")
+        self.last_name_label.pack()
+
+        # Create a Label widget containing the first name.
+        self.first_name_label = tk.Label(self.main_window, text="First Name: John")
+        self.first_name_label.pack()
+
+        # Create a Label widget containing the age.
+        self.age_label = tk.Label(self.main_window, text="Age: 30")
+        self.age_label.pack()
+
+        # Enter the tkinter main loop.
+        tk.mainloop()
+
+# Create an instance of the MyGUI class.
+my_gui = MyGUI()

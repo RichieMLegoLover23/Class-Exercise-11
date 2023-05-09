@@ -1,0 +1,13 @@
+import tkinter
+
+# Create the main window widget.
+main_window = tkinter.Tk()
+
+# Set the window title.
+main_window.title("My First Project")
+
+# Increase the width of the window.
+main_window.geometry("300x200")
+
+# Enter the tkinter main loop.
+tkinter.mainloop()

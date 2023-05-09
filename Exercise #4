@@ -1,0 +1,38 @@
+import tkinter
+import random
+
+class MyGUI:
+    def __init__(self):
+        # Create the main window widget.
+        self.main_window = tkinter.Tk()
+
+        # Create three Button widgets.
+        self.button1 = tkinter.Button(self.main_window, text="Show Quote 1", command=self.show_quote1)
+        self.button2 = tkinter.Button(self.main_window, text="Show Quote 2", command=self.show_quote2)
+        self.button3 = tkinter.Button(self.main_window, text="Show Quote 3", command=self.show_quote3)
+
+        # Pack the buttons.
+        self.button1.pack()
+        self.button2.pack()
+        self.button3.pack()
+
+        # Enter the tkinter main loop.
+        tkinter.mainloop()
+
+    def show_quote1(self):
+        quotes = ["Believe you can and you're halfway there.", "Positive anything is better than negative nothing.", "You are never too old to set another goal or to dream a new dream."]
+        quote = random.choice(quotes)
+        tkinter.messagebox.showinfo("Positive Quote", quote)
+
+    def show_quote2(self):
+        quotes = ["The best way to predict the future is to create it.", "You miss 100% of the shots you don't take.", "It does not matter how slowly you go as long as you do not stop."]
+        quote = random.choice(quotes)
+        tkinter.messagebox.showinfo("Positive Quote", quote)
+
+    def show_quote3(self):
+        quotes = ["Success is not final, failure is not fatal: it is the courage to continue that counts.", "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.", "Don't let yesterday take up too much of today."]
+        quote = random.choice(quotes)
+        tkinter.messagebox.showinfo("Positive Quote", quote)
+
+# Create an instance of the MyGUI class.
+my_gui = MyGUI()
